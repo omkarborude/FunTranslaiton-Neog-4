@@ -6,13 +6,15 @@
 }
                 /* navbar */
 .nav{
+    border-radius: 10px;
     background-color: #fef200;
     text-align: center;
     padding: 10px;
     height: 150px;
 }
 #navhead{
-    color: red;
+    
+    color: black;
     font-size: 50px;
 }
 .funimgl{
@@ -88,7 +90,31 @@
     background-color: blue;
 }
 
-/* Responsive */
+/* footer */
+
+.footer{
+    border-radius: 10px;
+    margin-top: 40px;
+    height: 80px;
+    background-color: #fef200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.footerlinks a{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+
+     /* Responsive */
 
 @media only screen  and (max-width:600px){
       .main{
@@ -98,24 +124,76 @@
       }
 
       .nav{
+        background-color: #fef200;
         text-align: center;
-        padding: 5px;
+        padding: 10px;
         height: 80px;
     }
 
     #navhead{
         color: red;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .funimgl{
-        height: 60%;
+        height: 70%;
+        width: 80px;
         float: left;
-        margin-right: 30px;
+        margin-right: 20px;
     }
     .funimgr{
-        height: 60%;
+        height: 70%;
+        width: 80px;
         float: right;
-        margin-left: 30px;
+        margin-left: 20px;
     }
+    
+    .listsection{
+        height: auto;
+    }
+    .funheader{
+       font-size: 15px;
+       text-align: center;
+       margin-top: 10px;
+    }
+    
+    .funcards{
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .funcards .fun{
+        margin-bottom: 40px;
+    }
+    .funcontent .codeBtn:hover{
+        color: white;
+        background-color: red;
+    }
+    .funcontent .tryBtn:hover{
+        color: white;
+        background-color: blue;
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
