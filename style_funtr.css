@@ -1,0 +1,121 @@
+
+.main{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+                /* navbar */
+.nav{
+    background-color: #fef200;
+    text-align: center;
+    padding: 10px;
+    height: 150px;
+}
+#navhead{
+    color: red;
+    font-size: 50px;
+}
+.funimgl{
+    height: 100%;
+    width: 140px;
+    float: left;
+    margin-right: 40px;
+}
+.funimgr{
+    height: 100%;
+    width: 140px;
+    float: right;
+    margin-left: 40px;
+}
+
+/* Fun List */
+
+.listsection{
+    height: 400px;
+}
+.funheader{
+    text-align: center;
+    margin-top: 10px;
+}
+.funcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 20px 0;
+}
+.funcards .fun{
+    border-radius: 5px;
+    position: relative;
+    height: 320px;
+    width: 310px;
+    background: #fff;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.09), 0 10px 10px rgba(0,0,0,0.09);
+}
+.funcontent .codeBtn{
+    color: black;
+    position: absolute;
+    left: 30px;
+    padding: 8px;
+    border: 2px solid black;
+    width: 85px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    transition: all ease-in-out 0.2s;
+}
+.funcontent .codeBtn:hover{
+    color: white;
+    background-color: red;
+}
+.funcontent .tryBtn{
+    color: black;
+    position: absolute;
+    background-color: #ededed;
+    right: 30px;
+    padding: 8px;
+    border: 2px solid black;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.2s;
+}
+.funcontent .tryBtn:hover{
+    color: white;
+    background-color: blue;
+}
+
+/* Responsive */
+
+@media only screen  and (max-width:600px){
+      .main{
+          text-align: center;
+          width: 100%;
+          margin: auto;
+      }
+
+      .nav{
+        text-align: center;
+        padding: 5px;
+        height: 80px;
+    }
+
+    #navhead{
+        color: red;
+        font-size: 20px;
+    }
+
+    .funimgl{
+        height: 60%;
+        float: left;
+        margin-right: 30px;
+    }
+    .funimgr{
+        height: 60%;
+        float: right;
+        margin-left: 30px;
+    }
+}
